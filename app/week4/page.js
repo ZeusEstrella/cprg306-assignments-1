@@ -1,4 +1,5 @@
 import Link from "next/link";
+import NewItem from "./new-item";
 
 export default function Page() {
 
@@ -8,6 +9,7 @@ export default function Page() {
                 <Link href='/' className="hover:underline ">
                     Home
                 </Link>
+                <NewItem/>
             </div>
         </main>
     )
