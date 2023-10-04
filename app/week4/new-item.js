@@ -26,9 +26,9 @@ export default function NewItem({}) {
     const handleSubmit = (event) => { 
         event.preventDefault();
 
-        const item = {setName, setQuantity, setCategory};
+        const item = {name, quantity, category};
         console.log("Item Created: ", item);
-        alert("Current Item State: ", setName, setQuantity, setCategory)
+        alert("Current Item State: " + name + " " + quantity + " " + category)
 
         setName("");
         setQuantity(1);
