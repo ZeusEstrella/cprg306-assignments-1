@@ -43,11 +43,11 @@ export default function NewItem({}) {
                 <input required type="text" value={name} onChange={handleNameChange} className="text-black"/>
                 <pre>{'\n'}</pre>
 
-                <label htmlFor="name">Name</label>
+                <label htmlFor="name">Quantity</label>
                 <input required type="number" min={1} max={99} value={quantity} onChange={handleQuantityChange} className="text-black"/>
                 <pre>{'\n'}</pre>
 
-                <label htmlFor="quantity">Quantity {'\n'}
+                <label htmlFor="quantity">Category {'\n'}
                     <select onChange={handleCategoryChange} className="bg-white text-black">
                         <option value="produce">Produce</option>
                         <option value="dairy">Dairy</option>
