@@ -7,7 +7,7 @@ export default function Page() {
         <main>
             <div>
                 <Link href='/' className="hover:underline ">
-                    Home
+                    🏠Home
                 </Link>
                 <NewItem/>
             </div>

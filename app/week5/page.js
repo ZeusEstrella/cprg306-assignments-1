@@ -10,7 +10,7 @@ export default function Page() {
     return (
         <main>
             <Link href='/' className="hover:underline ">
-                    Home
+                    🏠Home
             </Link>
 
             <h1 className="m-2 p-2 font-bold text-xl">Shopping List</h1>

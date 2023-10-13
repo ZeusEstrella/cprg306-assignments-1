@@ -9,7 +9,7 @@ export default function Page() {
                 
                 <div className="text-right">
                     <Link href='/' className="hover:underline text-right">
-                        Home
+                        🏠Home
                     </Link>
                 </div>
 

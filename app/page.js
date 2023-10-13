@@ -2,22 +2,42 @@ import StudentInfo from './studentinfo'
 import Link from 'next/link'
 
 export default function Home() {
+  
+  const weekLinkStyle = 'hover:underline btn btn-primary m-2 p-2';
   return (
-    <div>
+    <main className='m-3 p-2'>
       <h1>CPRG 306: Web Development 2 - Assignments</h1>
       <StudentInfo />
-      <Link href='/week2' className='hover:underline' >
-        <p> Week 2 </p> 
-      </Link>
-      <Link href='/week3' className='hover:underline'>
-        <p> Week 3 </p> 
-      </Link>
-      <Link href='/week4' className='hover:underline'>
-        <p> Week 4 </p> 
-      </Link>
-      <Link href='/week5' className='hover:underline'>
-        <p> Week 5 </p> 
-      </Link>
-    </div>
+      
+      <div>
+        <div>
+          <Link href='/week2' className={weekLinkStyle} >
+            week 2 
+          </Link>
+        </div>
+        <div>
+          <Link href='/week3' className={weekLinkStyle} >
+            week 3 
+          </Link>
+        </div>
+        <div>
+          <Link href='/week4' className={weekLinkStyle} >
+            week 4 
+          </Link>
+        </div>
+        <div>
+          <Link href='/week5' className={weekLinkStyle} >
+            week 5 
+          </Link>
+        </div>
+        <div>
+          <Link href='/week6' className={weekLinkStyle} >
+            week 6 
+          </Link>
+        </div>
+
+      </div>
+      
+    </main>
   )
 }
