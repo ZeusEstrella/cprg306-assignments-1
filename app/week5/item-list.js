@@ -63,8 +63,8 @@ export default function ItemList() {
             
             //TODO: Make the buttons actually work, stylize the page
             <div className='flex items-center'>
-                <button onClick={handleClickSortByName} className='m-2 p-2 border border-white rounded hover:bg-white hover:text-black '>Sort by Name</button>
-                <button onClick={handleClickSortByCategory} className='m-2 p-2 border border-white rounded hover:bg-white hover:text-black'>Sort by Category</button>
+                <button onClick={handleClickSortByName} className='m-2 p-2 border border-white rounded hover:bg-white hover:text-black btn'>Sort by Name</button>
+                <button onClick={handleClickSortByCategory} className='m-2 p-2 border border-white rounded hover:bg-white hover:text-black btn'>Sort by Category</button>
             </div>
 
             <div className='flex flex-col flex-grow items-center'>
