@@ -21,10 +21,11 @@ export default function Page() {
             </Link>
 
             <h1 className="m-2 p-2 font-bold text-xl">Shopping List</h1>
+
+            <NewItem onAddItem={handleAddItem}/>
             <ItemList
                 items={items}
             />
-            <NewItem onAddItem={handleAddItem}/>
             
         </main>
     );
