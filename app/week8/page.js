@@ -26,9 +26,19 @@ export default function Page() {
             <br/>
             
             { user ? (
-                <button onClick={handleSignOut}>Sign Out</button>
+                <button 
+                    onClick={handleSignOut}
+                    className="btn btn-outline btn-error"
+                >
+                    Sign Out
+                </button>
             ) : (
-                <button onClick={handleSignIn}>Sign In</button>
+                <button 
+                    onClick={handleSignIn}
+                    className="btn btn-outline btn-success"
+                >
+                    Sign In
+                </button>
             )}
 
         </main>
