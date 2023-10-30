@@ -1,6 +1,7 @@
 "use client";
 
 import { useUserAuth } from "./auth-context";
+import Link from "next/link";
 
 export default function Page() {
     const { user, gitHubSignIn, firebaseSignOut } = useUserAuth();
@@ -16,6 +17,10 @@ export default function Page() {
     return (
         <main>
             
+            <Link href='/' className="hover:underline ">
+                    🏠Home
+            </Link>
+
             {user? (
                 <p>Logged in as {user?.displayName} with email {user?.email}</p>
             ) : (
