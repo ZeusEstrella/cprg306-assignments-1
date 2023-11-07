@@ -1,6 +1,6 @@
 "use client";
 
-import { useUserAuth } from "./auth-context";
+import { useUserAuth } from "./_utils/auth-context";
 import Link from "next/link";
 
 export default function Page() {
@@ -31,12 +31,24 @@ export default function Page() {
             <br/>
             
             { user ? (
-                <button 
-                    onClick={handleSignOut}
-                    className="btn btn-outline btn-error"
-                >
-                    Sign Out
-                </button>
+                
+                <div className="m-2 p-2 flex flex-col w-32 "> 
+                    <button 
+                        onClick={handleSignOut}
+                        className="btn btn-outline btn-error flex-initial "
+                    >
+                        Sign Out
+                    </button>
+
+                    <div>
+                        <Link 
+                            href='/week8/shopping-list' 
+                            className="btn btn-outline btn-ghost"
+                        >
+                            🛒Shopping List
+                        </Link>
+                    </div>
+                </div>
             ) : (
                 <button 
                     onClick={handleSignIn}
